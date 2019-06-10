@@ -1,0 +1,115 @@
+{
+"inotify-tools"   : {
+	"name": "inotify-tools",
+	"os": ["linux", "osx"]
+},
+"tree"            : {
+	"name": "tree",
+	"os": ["linux", "osx"]
+},
+"unzip"            : {
+	"name": "unzip",
+	"os": ["linux", "osx"]
+},
+"xclip"            : {
+	"name": "xclip",
+	"os": ["linux"]
+},
+"git"            : {
+	"name": "git",
+	"os": ["linux", "osx"]
+},
+"ssh"             : {
+	"name": "ssh",
+	"os": ["linux", "osx"]
+},
+"sshfs"             : {
+	"name": "sshfs",
+	"os": ["linux", "osx"]
+},
+"build-essential"             : {
+	"name": "build-essential",
+	"os": ["linux"]
+},
+"cmake"             : {
+	"name": "cmake",
+	"os": ["linux"]
+},
+"curl"             : {
+	"name": "curl",
+	"os": ["linux", "osx"]
+},
+"wget"             : {
+	"name": "wget",
+	"os": ["linux", "osx"]
+},
+"httpie"             : {
+	"name": "httpie",
+	"os": ["linux", "osx"]
+},
+"rofie"             : {
+	"name": "rofie",
+	"os": ["linux"]
+},
+"tree"             : {
+	"name": "tree",
+	"os": ["linux", "osx"]
+},
+
+"maven"             : {
+	"name": "maven",
+	"os": ["linux", "osx"]
+},
+"ant"             : {
+	"name": "ant",
+	"os": ["linux", "osx"]
+},
+"python"             : {
+	"name": "python",
+	"os": ["linux", "osx"]
+},
+"python-dev"             : {
+	"name": "python-dev",
+	"os": ["linux", "osx"]
+},
+"python-pip"             : {
+	"name": "python-pip",
+	"os": ["linux", "osx"]
+},
+"dnsmasq"             : {
+	"name": "dnsmasq",
+	"os": ["linux", "osx"]
+},
+"nginx"             : {
+	"name": "nginx",
+	"os": ["linux", "osx"]
+},
+"tmux"             : {
+	"name": "tmux",
+	"os": ["linux", "osx"]
+},
+"tmuxinator"             : {
+	"name": "tmuxinator",
+	"os": ["linux", "osx"]
+},
+"mysql-client"             : {
+	"name": "mysql-client",
+	"os": ["linux", "osx"]
+},
+"mysql-server"             : {
+	"name": "mysql-server",
+	"os": ["linux", "osx"]
+},
+"mysql-common"             : {
+	"name": "mysql-common",
+	"os": ["linux", "osx"]
+},
+"postgresql"             : {
+	"name": "postgresql",
+	"os": ["linux", "osx"]
+},
+"exuberant-ctags"             : {
+	"name": "exuberant-ctags",
+	"os": ["linux", "osx"]
+}
+}

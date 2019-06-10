@@ -1,0 +1,29 @@
+export PATH=$HOME/bin:$HOME/external_bin:/usr/local/bin:$PATH
+export ZSH=/Users/fasi/.oh-my-zsh
+
+ZSH_THEME="robbyrussell"
+DISABLE_AUTO_TITLE="true"
+ENABLE_CORRECTION="true"
+
+plugins=(git git-extras vim-interaction mvn npm ng tmux docker)
+
+source $ZSH/oh-my-zsh.sh
+export LANG=de_DE.UTF-8
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim -v'
+fi
+
+DISABLE_AUTO_UPDATE="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+HIST_STAMPS="mm/dd/yyyy"
+
+# Set vi mode
+setopt vi
+export LDFLAGS="-L/usr/local/opt/readline/lib"
+export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.zsh_plugin/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh ] && source  ~/.zsh_plugin/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh 
+[ -f ~/.zsh_plugin/calc.plugin.zsh/calc.plugin.zsh ] && source  ~/.zsh_plugin/calc.plugin.zsh/calc.plugin.zsh

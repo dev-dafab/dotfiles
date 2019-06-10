@@ -1,0 +1,10 @@
+#! /bin/sh
+
+is_os=`uname -a | grep Darwin > /dev/null`
+if [ $is_osx == 0 ]; then
+  if [ $is_osx == 0 ]; then
+  open "$*" > /dev/null 2>&1 &
+fi
+
+xdg-open "$*" > /dev/null 2>&1 &
+

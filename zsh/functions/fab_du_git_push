@@ -1,0 +1,38 @@
+java_check_command=`gradle check`
+java_test_command=`gradle test`
+java_check_list_page="file:///Users/fasi/Projects/spa/mmc_mocks_service/build/reports/checkstyle/main.html#f-/Users/fasi/Projects/spa/mmc_mocks_service/src/main/java/com/daimler/mymercedes/mmc/spa/mock/common/MockMasterData.java"
+
+
+isJavaProj() {
+ exit 0 
+}
+
+isJsOrTsProj() {
+}
+
+java_check() {
+	gradle check &>/dev/null 
+	exit $?
+}
+
+java_test() {
+	gradle test &>/dev/null 
+	exit $?
+}
+
+gpush() {
+	if[isJavaProj]; then
+		java_check_command
+		if[$? -ne 0]; then
+			open $java_check_list_page
+			exit -1;
+		fi
+
+		java_test_command 
+		if[$? -ne 0]; then
+			echo "Test Failed"
+			exit -1
+		fi
+		git push origin `get_git_branch
+	fi
+}
